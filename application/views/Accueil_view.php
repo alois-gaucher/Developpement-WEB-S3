@@ -45,6 +45,7 @@
 	      <!-- Content -->
 	      <h2 class="card-title h2 my-4 py-2">Saint-Pavut</h2>
 	      <p id="motd" class="mb-4 pb-2 px-md-5 mx-md-5"></p>
+			<figcaption class="figure-caption text-right text-light mt-0 pt-0 pr-0 pr-lg-5">Jean-Claude Van Damme.</figcaption>
 	      <a href="https://github.com/couquino/Developpement-WEB-S3" target="blank" class="btn cloudy-knoxville-gradient text-dark"><i class="fas fa-clone left"></i> View on Github</a>
 	    </div>
 	  </div>
@@ -106,10 +107,10 @@
 
 				var i = Math.floor(r_text.length * Math.random());
 
-				document.getElementById('motd').innerHTML = r_text[i];
+				document.getElementById('motd').innerHTML = '"' + r_text[i] + '"';
 
 				console.log("Changement de motd...");
-				x = 5;
+				x = 15;
 				setTimeout(motd, x*1000);
 			}
 			motd();
