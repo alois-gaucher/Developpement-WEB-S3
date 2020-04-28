@@ -17,7 +17,10 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg sticky-top navbar-light cloudy-knoxville-gradient scrolling-navbar">
-  		<a class="navbar-brand" href="#">Saint-Pavut</a>
+  		<a class="navbar-brand" href="#">
+			<img src="<?php echo base_url()?>assets/photos/logo_stpavut.png" id="gilbert" height="30" alt="stpavut logo">
+
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -96,6 +99,11 @@
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
+			function bounce() {
+				$('#gilbert').addClass('animated bounceOutLeft');
+			}
+			bounce();
+
 			function motd() {
 				var r_text = new Array ();
 				r_text[0] = "Ah non attention, ce n'est pas un simple sport car on vit dans une réalité qu'on a créée et que j'appelle illusion et finalement tout refaire depuis le début. Ça respire le meuble de Provence, hein ?";
