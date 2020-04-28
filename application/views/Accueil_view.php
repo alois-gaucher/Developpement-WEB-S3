@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Material Design Bootstrap</title>
+  <title>Saint-Pavut</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -49,7 +49,7 @@
 	      <!-- Content -->
 	      <h2 class="card-title h2 my-4 py-2">Saint-Pavut</h2>
 	      <p class="mb-4 pb-2 px-md-5 mx-md-5">Ça sounds good, si vraiment tu veux te rappeler des souvenirs de ton perroquet, c'est juste une question d'awareness et parfois c'est bon parfois c'est pas bon. Et j'ai toujours grandi parmi les chiens.</p>
-	      <a href="https://github.com/couquino/Developpement-WEB-S3" class="btn cloudy-knoxville-gradient text-dark"><i class="fas fa-clone left"></i> View on Github</a>
+	      <a href="https://github.com/couquino/Developpement-WEB-S3" target="blank" class="btn cloudy-knoxville-gradient text-dark"><i class="fas fa-clone left"></i> View on Github</a>
 	    </div>
 	  </div>
 	</div>
