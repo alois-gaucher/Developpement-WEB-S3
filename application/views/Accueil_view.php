@@ -1,3 +1,4 @@
+<?php require_once(base_url().'assets/php/jcvd.php'); ?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,10 +17,6 @@
   <link href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-	<div id="mdb-preloader" class="flex-center">
-	  <div id="preloader-markup">
-	  </div>
-	</div>
 	<nav class="navbar navbar-expand-lg sticky-top navbar-light cloudy-knoxville-gradient scrolling-navbar">
   		<a class="navbar-brand" href="#">Accueil</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,7 +45,7 @@
 	    <div class="py-5">
 	      <!-- Content -->
 	      <h2 class="card-title h2 my-4 py-2">Saint-Pavut</h2>
-	      <p class="mb-4 pb-2 px-md-5 mx-md-5">Ça sounds good, si vraiment tu veux te rappeler des souvenirs de ton perroquet, c'est juste une question d'awareness et parfois c'est bon parfois c'est pas bon. Et j'ai toujours grandi parmi les chiens.</p>
+	      <p class="mb-4 pb-2 px-md-5 mx-md-5"><?php echo jcvd(); ?></p>
 	      <a href="https://github.com/couquino/Developpement-WEB-S3" target="blank" class="btn cloudy-knoxville-gradient text-dark"><i class="fas fa-clone left"></i> View on Github</a>
 	    </div>
 	  </div>
