@@ -74,14 +74,18 @@
 					<!-- Card content -->
 					<div class="card-body text-center">
 						<!-- Title -->
-						<h4 class="card-title"><?php echo $ligne->manif_intitule ?></h4>
+						<h4 class="card-title text-capitalize"><?php echo $ligne->manif_intitule ?></h4>
 						<!-- Text -->
-						<p class="card-text">Type: <?php echo $ligne->manif_type ?></p>
-						<p class="card-text">Description: <?php echo $ligne->manif_description ?></p>
-						<p class="card-text">Date: <?php echo $ligne->manif_date ?></p>
+						<p class="lead">Type:</p>
+						<p class="card-text text-capitalize"><?php echo $ligne->manif_type ?></p>
+						<p class="lead">Description:</p>
+						<p class="card-text"><?php echo $ligne->manif_description ?></p>
+						<p class="lead">Date:</p>
+						<p class="card-text"><?php echo $ligne->manif_date ?></p>
+						<p class="lead">Prix:</p>
+						<p class="card-text"><?php echo $ligne->manif_prix_place ?> €</p>
 						<!-- Button -->
 						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
-						<p class="card-text">Prix: <?php echo $ligne->manif_prix_place ?>€</p>
 					</div>
 				</div>
 				<!-- Card -->

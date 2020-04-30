@@ -65,12 +65,16 @@
 						<!-- Title -->
 						<h4 class="card-title"><?php echo $ligne->salle_nom ?></h4>
 						<!-- Text -->
-						<p class="card-text">Capacité maximale: <?php echo $ligne->salle_place_max ?></p>
-						<p class="card-text">Surface: <?php echo $ligne->salle_surface ?></p>
-						<p class="card-text">Code: <?php echo $ligne->salle_code ?></p>
+						<p class="lead">Capacité maximale:</p>
+						<p class="card-text"><?php echo $ligne->salle_place_max ?> personnes</p>
+						<p class="lead">Surface:</p>
+						<p class="card-text"><?php echo $ligne->salle_surface ?> m²</p>
+						<p class="lead">Code:</p>
+						<p class="card-text"><?php echo $ligne->salle_code ?></p>
+						<p class="lead">Prix:</p>
+						<p class="card-text"><?php echo $ligne->salle_prix_loc ?> €</p>
 						<!-- Button -->
 						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
-						<p class="card-text">Prix: <?php echo $ligne->salle_prix_loc ?></p>
 					</div>
 				</div>
 				<!-- Card -->
