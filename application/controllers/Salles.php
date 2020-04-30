@@ -1,5 +1,5 @@
 <?php
-class Salles exetends CI_Controller {
+class Salles extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('Salles_model');
