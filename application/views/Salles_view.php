@@ -82,10 +82,8 @@
 
 <!-- Footer -->
 <footer class="page-footer sticky-bottom font-small special-color-dark pt-4">
-
 	<!-- Footer Elements -->
 	<div class="container">
-
 		<!-- Social buttons -->
 		<ul class="list-unstyled list-inline text-center">
 			<li class="list-inline-item">
@@ -100,16 +98,13 @@
 			</li>
 		</ul>
 		<!-- Social buttons -->
-
 	</div>
 	<!-- Footer Elements -->
-
 	<!-- Copyright -->
 	<div class="footer-copyright text-center py-3">© <?php echo date("Y"); ?> Copyright:
 		<a href="https://alois-gaucher.fr/"> Aloïs GAUCHER</a>
 	</div>
 	<!-- Copyright -->
-
 </footer>
 <!-- Footer -->
 <!-- Importing JS -->
@@ -126,7 +121,7 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		function bounce() {
-			$('#gilbert').addClass('animated bounceOutLeft');
+			$('#gilbert').addClass('animated bounce');
 		}
 		bounce();
 	});
