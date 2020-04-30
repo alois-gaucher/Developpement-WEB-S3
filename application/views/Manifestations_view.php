@@ -53,17 +53,20 @@
 </div>
 <!-- Jumbotron -->
 
-<!-- Content-salles -->
+<!-- Content-manifestations -->
 <div class="container pt-3 pb-3">
 	<div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
 		<?php foreach ($toutes as $ligne ) { ?>
 		<div class="col mb-4 mt-4">
 				<!-- Card -->
-				<div class="card h-100 mt-4 mb-4">
+				<div class="card wow h-100 mt-4 mb-4">
 					<!-- Card image -->
-					<div class="view overlay">
+					<div class="view overlay zoom">
 						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
 							 alt="<?php echo $ligne->manif_intitule ?>">
+						<div class="mask flex-center rgba-black-strong">
+							<p class="white-text"><?php echo $ligne->manif_intitule ?></p>
+						</div>
 						<a href="#!">
 							<div class="mask rgba-white-slight"></div>
 						</a>
@@ -128,11 +131,11 @@
 <!-- Reveal when scrolling, add: wow fadeInUp classes -->
 <script type="text/javascript">
 	$(document).ready(function() {
+		/* WOW Animations */
 		new WOW().init();
-	});
-</script>
-<script type="text/javascript">
-	$(document).ready(function() {
+		$( ".wow" ).addClass( "fadeInUp" );
+
+		/* Logo Animations */
 		function bounce() {
 			$('#gilbert').addClass('animated bounceOutLeft');
 		}
