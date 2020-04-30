@@ -74,7 +74,7 @@
 						<p class="lead">Prix:</p>
 						<p class="card-text"><?php echo $ligne->salle_prix_loc ?> €</p>
 						<!-- Button -->
-						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
+						<a href="#" class="btn btn-action mt-2">Réserver</a>
 					</div>
 				</div>
 				<!-- Card -->

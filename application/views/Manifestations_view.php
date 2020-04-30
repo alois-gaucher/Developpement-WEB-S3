@@ -85,7 +85,7 @@
 						<p class="lead">Prix:</p>
 						<p class="card-text"><?php echo $ligne->manif_prix_place ?> €</p>
 						<!-- Button -->
-						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
+						<a href="#" class="btn btn-action mt-2">Réserver</a>
 					</div>
 				</div>
 				<!-- Card -->
