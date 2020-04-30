@@ -32,10 +32,10 @@
 		        </a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Menu 1</a>
+		        <a class="nav-link" href="<?php echo base_url()?>Manifestations">Manifestations</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Menu 2</a>
+		        <a class="nav-link" href="<?php echo base_url()?>Salles">Salles</a>
 		      </li>
 		    </ul>
 		 </div>
