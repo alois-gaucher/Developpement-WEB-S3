@@ -59,7 +59,7 @@
 		<?php foreach ($toutes as $ligne ) { ?>
 		<div class="col mb-4 mt-4">
 				<!-- Card -->
-				<div class="card mt-4 mb-4">
+				<div class="card h-100 mt-4 mb-4">
 					<!-- Card image -->
 					<div class="view overlay">
 						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
@@ -78,7 +78,7 @@
 						<p class="card-text">Date: <?php echo $ligne->manif_date ?></p>
 						<!-- Button -->
 						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
-						<p class="card-text">Prix: <?php echo $ligne->manif_prix_place ?></p>
+						<p class="card-text">Prix: <?php echo $ligne->manif_prix_place ?>€</p>
 					</div>
 				</div>
 				<!-- Card -->
