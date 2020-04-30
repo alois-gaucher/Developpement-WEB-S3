@@ -30,8 +30,8 @@
 				<a class="nav-link" href="<?php echo base_url()?>">Accueil
 				</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link active" href="<?php echo base_url()?>Manifestations">Manifestations</a>
+			<li class="nav-item active">
+				<a class="nav-link" href="<?php echo base_url()?>Manifestations">Manifestations</a>
 				<span class="sr-only">(current)</span>
 			</li>
 			<li class="nav-item">
@@ -46,8 +46,8 @@
 	<div class="text-white text-center rgba-stylish-strong py-5 px-4">
 		<div class="py-5">
 			<!-- Content -->
-			<h2 class="card-title h2 my-4 py-2">Les Salles</h2>
-			<p id="" class="mb-4 pb-2 px-md-5 mx-md-5">Retrouvez ici toutes nos différentes salles, disponibles à la location.</p>
+			<h2 class="card-title h2 my-4 py-2">Les Manifestations</h2>
+			<p id="" class="mb-4 pb-2 px-md-5 mx-md-5">Retrouvez ici toutes nos différentes manifestations.</p>
 		</div>
 	</div>
 </div>
