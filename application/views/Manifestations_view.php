@@ -60,17 +60,25 @@
 		<div class="col mb-4 mt-4">
 				<!-- Card -->
 				<div class="card mt-4 mb-4">
+					<!-- Card image -->
+					<div class="view overlay">
+						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
+							 alt="<?php echo $ligne->manif_intitule ?>">
+						<a href="#!">
+							<div class="mask rgba-white-slight"></div>
+						</a>
+					</div>
 					<!-- Card content -->
 					<div class="card-body text-center">
 						<!-- Title -->
-						<h4 class="card-title"><?php echo $ligne->salle_nom ?></h4>
+						<h4 class="card-title"><?php echo $ligne->manif_intitule ?></h4>
 						<!-- Text -->
-						<p class="card-text">Capacité maximale: <?php echo $ligne->salle_place_max ?></p>
-						<p class="card-text">Surface: <?php echo $ligne->salle_surface ?></p>
-						<p class="card-text">Code: <?php echo $ligne->salle_code ?></p>
+						<p class="card-text">Type: <?php echo $ligne->manif_type ?></p>
+						<p class="card-text">Description: <?php echo $ligne->manif_description ?></p>
+						<p class="card-text">Date: <?php echo $ligne->manif_date ?></p>
 						<!-- Button -->
 						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
-						<p class="card-text">Prix: <?php echo $ligne->salle_prix_loc ?></p>
+						<p class="card-text">Prix: <?php echo $ligne->manif_prix_place ?></p>
 					</div>
 				</div>
 				<!-- Card -->
