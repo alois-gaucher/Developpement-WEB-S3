@@ -6,6 +6,6 @@ class Manifestations extends CI_Controller {
 		$data['toutes'] = $this->Manifestations_model->toutesLesManifestations();
 			$this->load->view('Manifestations_view', $data);
 
-		}
+	}
 }
 ?>
