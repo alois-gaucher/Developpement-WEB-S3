@@ -54,12 +54,12 @@
 <!-- Jumbotron -->
 
 <!-- Content-manifestations -->
-<div class="container pt-3 pb-3">
-	<div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+<div class="container pt-3 pb-3 mw-100">
+	<div class="row row-cols-1 row-cols-sm-5 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
 		<?php foreach ($toutes as $ligne ) { ?>
 		<div class="col mb-4 mt-4">
 				<!-- Card -->
-				<div class="card wow h-100 mt-4 mb-4">
+				<div class="card wow h-100">
 					<!-- Card image -->
 					<div class="view overlay zoom">
 						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
@@ -85,7 +85,7 @@
 						<p class="lead">Prix:</p>
 						<p class="card-text"><?php echo $ligne->manif_prix_place ?> €</p>
 						<!-- Button -->
-						<a href="#" class="btn btn-action mt-2">Réserver</a>
+						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
 					</div>
 				</div>
 				<!-- Card -->

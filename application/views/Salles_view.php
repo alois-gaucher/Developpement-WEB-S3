@@ -54,8 +54,8 @@
 <!-- Jumbotron -->
 
 <!-- Content-salles -->
-<div class="container pt-3 pb-3">
-	<div class="row row-cols-1 row-cols-sm-3 row-cols-md-3 row-cols-lg-3 row-cols-xl-3">
+<div class="container pt-3 pb-3 mw-100">
+	<div class="row row-cols-1 row-cols-sm-5 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
 		<?php foreach ($toutes as $ligne ) { ?>
 		<div class="col mb-4 mt-4">
 				<!-- Card -->
@@ -69,8 +69,6 @@
 						<p class="card-text"><?php echo $ligne->salle_place_max ?> personnes</p>
 						<p class="lead">Surface:</p>
 						<p class="card-text"><?php echo $ligne->salle_surface ?> m²</p>
-						<p class="lead">Code:</p>
-						<p class="card-text"><?php echo $ligne->salle_code ?></p>
 						<p class="lead">Prix:</p>
 						<p class="card-text"><?php echo $ligne->salle_prix_loc ?> €</p>
 						<!-- Button -->
