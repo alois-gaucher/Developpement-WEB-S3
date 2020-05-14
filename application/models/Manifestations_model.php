@@ -10,6 +10,12 @@ class Manifestations_model extends CI_Model {
 	{
 	$query = $this->db->get('manifestations');
         return $query->result();
-		}
+	}
+
+	public function par5Manifestations($num)
+	{
+		$query = $this->db->query('SELECT * FROM manifestations LIMIT 5'.$num.' ,5');
+		return $query->result();
+	}
 }
 ?>
