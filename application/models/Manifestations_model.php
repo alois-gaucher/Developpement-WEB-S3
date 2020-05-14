@@ -14,7 +14,7 @@ class Manifestations_model extends CI_Model {
 
 	public function par5Manifestations($num)
 	{
-		$query = $this->db->query('SELECT * FROM manifestations LIMIT 5'.$num.' ,5');
+		$query = $this->db->query('SELECT * FROM manifestations LIMIT '.$num.' ,5');
 		return $query->result();
 	}
 }

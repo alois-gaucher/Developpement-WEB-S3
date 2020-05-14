@@ -91,22 +91,12 @@
 				<!-- Card -->
 		</div>
 		<?php } ?>
+		<div class="container text-center text-dark">
+			<nav id="pagination" aria-label="Pagination" class="align-center text-center">
+				<?php echo $pagination; ?>
+			</nav>
+		</div>
 	</div>
-	<nav aria-label="Pagination">
-		<ul class="pagination pg-dark">
-			<li class="page-item ">
-				<a class="page-link" tabindex="-1">Précédent</a>
-			</li>
-			<li class="page-item"><a class="page-link">1</a></li>
-			<li class="page-item active">
-				<a class="page-link">2 <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="page-item"><a class="page-link">3</a></li>
-			<li class="page-item ">
-				<a class="page-link">Suivant</a>
-			</li>
-		</ul>
-	</nav>
 </div>
 <!---->
 
@@ -155,6 +145,10 @@
 			$('#gilbert').addClass('animated bounce');
 		}
 		bounce();
+
+		$('li').click(function() {
+			$(this).addClass('active').siblings().removeClass('active');
+		});
 	});
 </script>
 </body>
