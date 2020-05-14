@@ -92,6 +92,21 @@
 		</div>
 		<?php } ?>
 	</div>
+	<nav aria-label="Pagination">
+		<ul class="pagination pg-dark">
+			<li class="page-item ">
+				<a class="page-link" tabindex="-1">Précédent</a>
+			</li>
+			<li class="page-item"><a class="page-link">1</a></li>
+			<li class="page-item active">
+				<a class="page-link">2 <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="page-item"><a class="page-link">3</a></li>
+			<li class="page-item ">
+				<a class="page-link">Suivant</a>
+			</li>
+		</ul>
+	</nav>
 </div>
 <!---->
 
