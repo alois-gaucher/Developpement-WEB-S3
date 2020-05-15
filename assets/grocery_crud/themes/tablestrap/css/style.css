@@ -1,0 +1,9 @@
+.wow {
+	visibility: hidden;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+	border-radius: 10rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}

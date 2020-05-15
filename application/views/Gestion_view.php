@@ -13,7 +13,8 @@
 					<!-- Title -->
 					<h4 class="card-title text-capitalize">Accueil backoffice</h4>
 					<!-- Button -->
-					<a href="<?php echo site_url('Gestion') ?>" class="btn btn-action mt-2 mb-2">Accédez à l'accueil du backoffice</a>
+					<a href="<?php echo site_url('Gestion') ?>" class="btn btn-action mt-2 mb-2">Accédez à l'accueil du
+						backoffice</a>
 				</div>
 			</div>
 			<!-- Card -->
@@ -91,13 +92,9 @@
 	</div>
 
 </div>
-	<div style='height:20px;'></div>  
-    <div style="padding: 10px">
-		<?php echo $output; ?>
-    </div>
+<div class="container pt-4 pb-4 mw-100">
+	<?php echo $output; ?>
+</div>
 <?php $this->load->view('Footer_view'); ?>
-<?php foreach($js_files as $file): ?>
-	<script src="<?php echo $file; ?>"></script>
-<?php endforeach; ?>
 </body>
 </html>

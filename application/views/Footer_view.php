@@ -30,6 +30,15 @@
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/popper.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url()?>assets/js/mdb.min.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/js/common/list.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/js/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/js/datatables-bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/js/pnotify.custom.min.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/js/datatables.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/extras/TableTools/media/js/ZeroClipboard.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/themes/tablestrap/extras/TableTools/media/js/TableTools.min.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/js/jquery_plugins/jquery.fancybox-1.3.4.js"></script>
+<script src="<?php echo base_url()?>assets/grocery_crud/js/jquery_plugins/jquery.easing-1.3.pack.js"></script>
 <!-- Reveal when scrolling, add: wow fadeInUp classes -->
 <script type="text/javascript">
 	$(document).ready(function() {
