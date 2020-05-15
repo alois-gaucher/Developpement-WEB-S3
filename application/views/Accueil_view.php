@@ -32,7 +32,7 @@
 		        </a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="<?php echo base_url()?>Manifestations">Manifestations</a>
+		        <a class="nav-link" href="<?php echo base_url()?>Manifestations/Page">Manifestations</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="<?php echo base_url()?>Salles">Salles</a>

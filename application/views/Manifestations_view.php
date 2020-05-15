@@ -31,7 +31,7 @@
 				</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="<?php echo base_url()?>Manifestations">Manifestations</a>
+				<a class="nav-link" href="<?php echo base_url()?>Manifestations/Page">Manifestations</a>
 				<span class="sr-only">(current)</span>
 			</li>
 			<li class="nav-item">
