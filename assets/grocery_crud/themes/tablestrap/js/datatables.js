@@ -207,7 +207,7 @@ function datatables_get_chosen_table(table_as_object){
 // Process Delete Button. Using Pnotify by sciactive for Confirmation Dialog and Success Message
 function delete_row(delete_url , row_id){
 	notice = new PNotify({
-		title: 'Confirmation Needed',
+		title: 'Confirmation',
 		text: message_alert_delete,
 		icon: 'glyphicon glyphicon-question-sign',
 		hide: false,
@@ -221,7 +221,7 @@ function delete_row(delete_url , row_id){
 		history: {
 			history: false
 		},
-		addclass: 'stack-modal',
+		addclass: 'modal',
 		stack: {'dir1': 'down', 'dir2': 'right', 'modal': true}
 	});
 	

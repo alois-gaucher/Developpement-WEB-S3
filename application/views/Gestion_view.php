@@ -1,4 +1,25 @@
-<?php $this->load->view('Head_view'); ?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Saint-Pavut</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Bootstrap core CSS -->
+	<link href="<?php echo base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="<?php echo base_url()?>assets/css/mdb.min.css" rel="stylesheet">
+	<link href="<?php echo base_url()?>assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+	<!-- Your custom styles (optional) -->
+	<link href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet">
+	<?php
+	foreach($css_files as $file): ?>
+		<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+	<?php endforeach; ?>
+</head>
 <body>
 <?php $this->load->view('Navbar_view'); ?>
 <!-- Liens-backoffice -->
@@ -92,9 +113,49 @@
 	</div>
 
 </div>
-<div class="container pt-4 pb-4 mw-100">
+<div class="container mw-100">
 	<?php echo $output; ?>
 </div>
-<?php $this->load->view('Footer_view'); ?>
+<!-- Footer -->
+<footer class="page-footer sticky-bottom font-small special-color-dark pt-4">
+	<!-- Footer Elements -->
+	<div class="container">
+		<!-- Social buttons -->
+		<ul class="list-unstyled list-inline text-center">
+			<li class="list-inline-item">
+				<a href="https://www.linkedin.com/in/alo%C3%AFs-gaucher/" target="blank" class="btn-floating btn-li mx-1">
+					<i class="fab fa-linkedin-in"> </i>
+				</a>
+			</li>
+			<li class="list-inline-item">
+				<a href="https://github.com/couquino/Developpement-WEB-S3" target="blank" class="btn-floating btn-github mx-1">
+					<i class="fab fa-github"> </i>
+				</a>
+			</li>
+		</ul>
+		<!-- Social buttons -->
+	</div>
+	<!-- Footer Elements -->
+	<!-- Copyright -->
+	<div class="footer-copyright text-center pt-3 pb-3">© <?php echo date("Y"); ?> Copyright:
+		<a href="https://alois-gaucher.fr/"> Aloïs GAUCHER</a>
+	</div>
+	<!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- Importing JS -->
+<script src="<?php echo base_url()?>assets/js/jquery.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/popper.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url()?>assets/js/mdb.min.js"></script>
+<?php foreach($js_files as $file): ?>
+	<script src="<?php echo $file; ?>"></script>
+<?php endforeach; ?>
+<!-- Reveal when scrolling, add: wow fadeInUp classes -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		new WOW().init();
+	});
+</script>
 </body>
 </html>
