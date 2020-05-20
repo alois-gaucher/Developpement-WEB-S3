@@ -19,11 +19,11 @@
 				<a class="nav-link" href="<?php echo base_url()?>Salles">Salles</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?php echo base_url()?>Gestion">Back-office</a>
+				<a class="nav-link" href="<?php echo base_url()?>Gestion"><i class="fas fa-user-lock"></i></a>
 			</li>
 			<?php if ($_SESSION['ident'] != '') {
 				echo '<li class="nav-item">
-				<a class="nav-link" href="'.base_url().'Login/Deconnexion">Déconnexion</a>
+				<a class="nav-link" href="'.base_url().'Login/Deconnexion"><i class="fas fa-sign-out-alt"></i></a>
 				</li>';
 			}
 			?>

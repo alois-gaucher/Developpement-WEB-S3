@@ -1,3 +1,4 @@
+<?php $_SESSION['ident'] = ''; ?>
 <!DOCTYPE html>
 <html lang="fr">
 

@@ -18,7 +18,10 @@ class Login extends CI_Controller
 		$ident = $this->input->post('identifiant');
 		$mdp = $this->input->post('password');
 
-		if($ident == 'bob' && $mdp == 'toto') {
+		$this->load->model('Users_model');
+		$reponse = $this->Users_model->VerificationLog($ident, $mdp);
+
+		if($reponse) {
 			$_SESSION['ident'] = 'admin';
 			redirect(base_url().'Gestion');
 		}
