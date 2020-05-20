@@ -21,6 +21,12 @@
 			<li class="nav-item">
 				<a class="nav-link" href="<?php echo base_url()?>Gestion">Back-office</a>
 			</li>
+			<?php if ($_SESSION['ident'] != '') {
+				echo '<li class="nav-item">
+				<a class="nav-link" href="'.base_url().'Login/Deconnexion">Déconnexion</a>
+				</li>';
+			}
+			?>
 		</ul>
 	</div>
 </nav>

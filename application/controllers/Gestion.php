@@ -8,6 +8,9 @@ class Gestion extends CI_Controller {
 		$this->load->database();
 		$this->load->helper('url');
 		$this->load->library('grocery_CRUD');
+		if(!isset($_SESSION['ident']) || $_SESSION['ident'] != 'admin') {
+			redirect(base_url() . 'Login');
+		};
 	}
 
 	public function index()
