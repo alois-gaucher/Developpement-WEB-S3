@@ -23,5 +23,12 @@ class Manifestations extends CI_Controller {
 
 		$this->load->view('Manifestations_view', $data);
 	}
+
+	public function PDF()
+	{
+		$this->load->model('Manifestations_model');
+		$data['toutes'] = $this->Manifestations_model->toutesLesManifestations();
+		$this->load->view('Manifestations_PDF_view', $data);
+	}
 }
 ?>
