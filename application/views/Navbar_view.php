@@ -24,7 +24,7 @@
 			<li class="nav-item">
 				<a class="nav-link" href="<?php echo base_url()?>Gestion"><i class="fas fa-user-lock"></i></a>
 			</li>
-			<?php if (isset($_SESSION['ident']) || $_SESSION['ident'] == 'admin') {
+			<?php if (isset($_SESSION['ident']) && $_SESSION['ident'] == 'admin') {
 				echo '<li class="nav-item">
 				<a class="nav-link" href="'.base_url().'Login/Deconnexion"><i class="fas fa-sign-out-alt"></i></a>
 				</li>';
