@@ -21,6 +21,7 @@ foreach ($toutes as $une)
 	$pdf->SetFillColor(15, 0, 0);
 	$pdf->SetTextColor(255, 255, 255);
 	$pdf->Cell(0, 15, $une->manif_intitule, 0, 1, "C", 1);
+	$pdf->SetTextColor(0, 0, 0);
 	$pdf->WriteHTML($une->manif_prix_place.' €<br>');
 	$y = $pdf->GetY();
 	$pdf->Image('assets/photos/'.$une->manif_photo, 50, $y, 30);
