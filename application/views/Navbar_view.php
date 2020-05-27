@@ -16,10 +16,10 @@
 				<a class="nav-link" href="<?php echo base_url()?>Manifestations/Page">Manifestations</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?php echo base_url()?>Manifestations/PDF">Catalogue imprimable</a>
+				<a class="nav-link" href="<?php echo base_url()?>Salles">Salles</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?php echo base_url()?>Salles">Salles</a>
+				<a class="nav-link" href="<?php echo base_url()?>Manifestations/PDF">Catalogue imprimable</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="<?php echo base_url()?>Gestion"><i class="fas fa-user-lock"></i></a>
