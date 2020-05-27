@@ -1,4 +1,3 @@
-<?php if($_SESSION['ident'] == 'admin') {} else {$_SESSION['ident'] = '';} ?>
 <!DOCTYPE html>
 <html lang="fr">
 
