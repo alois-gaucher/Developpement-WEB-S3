@@ -41,12 +41,9 @@
 					<div class="view overlay zoom">
 						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
 							 alt="<?php echo $ligne->manif_intitule ?>">
-						<div class="mask flex-center rgba-black-strong">
-							<p class="white-text"><?php echo $ligne->manif_intitule ?></p>
+						<div class="mask flex-center rgba-black-strong" id="lightbox">
+							<a href="<?php echo base_url(); echo 'Manifestations/Graph/'; echo $ligne->manif_id;?>"><p class="white-text"><?php echo $ligne->manif_intitule ?></p></a>
 						</div>
-						<a href="#!">
-							<div class="mask rgba-white-slight"></div>
-						</a>
 					</div>
 					<!-- Card content -->
 					<div class="card-body text-center">

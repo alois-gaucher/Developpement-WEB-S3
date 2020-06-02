@@ -30,5 +30,18 @@ class Manifestations extends CI_Controller {
 		$data['toutes'] = $this->Manifestations_model->toutesLesManifestations();
 		$this->load->view('Manifestations_PDF_view', $data);
 	}
+
+	public function DataGraph($manif=1)
+	{
+		$this->load->model('Manifestations_model');
+		$data['data'] = $this->Manifestations_model->infos($manif);
+		$this->load->view('Graph_view', $data);
+	}
+
+	public function Graph($manif=1)
+	{
+		$data['manif'] = $manif;
+		$this->load->view('leGraph_view', $data);
+	}
 }
 ?>
