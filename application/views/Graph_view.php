@@ -3,7 +3,7 @@ $col[0]['label'] = 'spectateurs';
 $col[1]['label'] = 'nbspectateurs';
 
 $i = 0;
-foreach ($data as $ligne)
+foreach ($infos as $ligne)
 {
 	$data[$i]['c'] = array(array('v' => $ligne->abo_ville), array('v' => $ligne->totalresaabo));
 	$i++;

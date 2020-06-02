@@ -24,7 +24,7 @@ class Manifestations_model extends CI_Model {
 		return $query->result();
 	}
 
-	public function infos($m)
+	public function infos($manif)
 	{
 		$query = $this->db->query("
 SELECT
@@ -35,10 +35,9 @@ FROM
 INNER JOIN reservations ON manif_id = manif_id_
 INNER JOIN abonnes ON abo_id = abo_id_
 WHERE
-    manif_id = '.$m.'
+    manif_id = '.$manif.'
 GROUP BY
-    abo_ville
-		");
+    abo_ville");
 		return $query->result();
 	}
 }

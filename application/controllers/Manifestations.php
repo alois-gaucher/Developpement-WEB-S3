@@ -34,7 +34,7 @@ class Manifestations extends CI_Controller {
 	public function DataGraph($manif=1)
 	{
 		$this->load->model('Manifestations_model');
-		$data['data'] = $this->Manifestations_model->infos($manif);
+		$data['infos'] = $this->Manifestations_model->infos($manif);
 		$this->load->view('Graph_view', $data);
 	}
 
