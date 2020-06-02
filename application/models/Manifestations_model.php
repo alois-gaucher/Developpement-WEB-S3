@@ -26,7 +26,7 @@ class Manifestations_model extends CI_Model {
 
 	public function infos($manif)
 	{
-		$query = $this->db->query("
+		$query = $this->db->query('
 SELECT
     abo_ville,
     SUM(abo_qte_place_reserv) AS totalresaabo
@@ -37,7 +37,7 @@ INNER JOIN abonnes ON abo_id = abo_id_
 WHERE
     manif_id = '.$manif.'
 GROUP BY
-    abo_ville");
+    abo_ville');
 		return $query->result();
 	}
 }

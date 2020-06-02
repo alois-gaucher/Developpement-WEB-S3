@@ -43,10 +43,6 @@
 		}
 		bounce();
 
-		$(function () {
-			$("#lightbox").load("<?php echo base_url()?>assets/mdb-addons/mdb-lightbox-ui.html");
-		});
-
 		function motd() {
 			var r_text = new Array ();
 			r_text[0] = "Ah non attention, ce n'est pas un simple sport car on vit dans une réalité qu'on a créée et que j'appelle illusion et finalement tout refaire depuis le début. Ça respire le meuble de Provence, hein ?";

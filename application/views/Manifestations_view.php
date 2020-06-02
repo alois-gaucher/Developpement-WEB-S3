@@ -34,15 +34,16 @@
 <div class="container pt-3 pb-3 mw-100">
 	<div class="row row-cols-1 row-cols-sm-5 row-cols-md-5 row-cols-lg-5 row-cols-xl-5">
 		<?php foreach ($toutes as $ligne ) { ?>
-		<div class="col mb-4 mt-4">
+			<div class="col mb-4 mt-4">
 				<!-- Card -->
 				<div class="card wow h-100">
 					<!-- Card image -->
 					<div class="view overlay zoom">
-						<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>"
-							 alt="<?php echo $ligne->manif_intitule ?>">
-						<div class="mask flex-center rgba-black-strong" id="lightbox">
-							<a href="<?php echo base_url(); echo 'Manifestations/Graph/'; echo $ligne->manif_id;?>"><p class="white-text"><?php echo $ligne->manif_intitule ?></p></a>
+						<a href="<?php echo base_url(); echo 'Manifestations/Graph/'; echo $ligne->manif_id;?>">
+							<img class="card-img-top" src="<?php echo base_url() ?>assets/photos/<?php echo $ligne->manif_photo ?>" alt="<?php echo $ligne->manif_intitule ?>"/>
+						</a>
+						<div class="mask flex-center rgba-black-strong">
+							<a href="<?php echo base_url(); echo 'Manifestations/Graph/'; echo $ligne->manif_id;?>" target="_blank"><p class="white-text"><?php echo $ligne->manif_intitule ?></p></a>
 						</div>
 					</div>
 					<!-- Card content -->
@@ -60,18 +61,48 @@
 						<p class="card-text"><?php echo $ligne->manif_prix_place ?> €</p>
 						<!-- Button -->
 						<a href="#" class="btn btn-action mt-2 mb-2">Réserver</a>
+						<a href="" data-toggle="modal" data-target="#modal_<?php echo $ligne->manif_id?>" class="btn btn-action mt-2 mb-2">Statistiques</a>
 					</div>
 				</div>
-				<!-- Card -->
-		</div>
+			</div>
+			<!-- Card -->
 		<?php } ?>
 		<div class="container text-center text-dark">
 			<nav id="pagination" aria-label="Pagination" class="align-center text-center">
 				<?php echo $pagination; ?>
 			</nav>
 		</div>
+
 	</div>
 </div>
+<?php foreach ($toutes as $ligne ) { ?>
+	<!--Modal modal_<?php echo $ligne->manif_id?> -->
+	<div class="modal fade" id="modal_<?php echo $ligne->manif_id?>" tabindex="-1" role="dialog" aria-labelledby="<?php echo $ligne->manif_id?>_label"
+		 aria-hidden="true">
+		<!-- Change class .modal-sm to change the size of the modal -->
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title w-100" id="<?php echo $ligne->manif_id?>_label">Statistiques pour <?php echo $ligne->manif_intitule ?></h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body mb-0 p-0">
+					<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+						<iframe
+								src="<?php echo base_url(); echo 'Manifestations/Graph/'; echo $ligne->manif_id;?>" frameborder="0"
+								style="border:0" >
+						</iframe>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-red btn-sm" data-dismiss="modal">Fermer</button>
+				</div>
+			</div>
+		</div>
+	</div>
+<?php } ?>
 <!---->
 
 <!-- Footer -->
